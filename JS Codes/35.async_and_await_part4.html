@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Resolve & Reject Example</title>
+</head>
+
+<body>
+    <script>
+        function awt_lecture() {
+            return new Promise((resolve, reject) => {
+                let success = true; // change to false to test reject
+
+                setTimeout(() => {
+                    if (success) {
+                        console.log("AWT Lecture");
+                        resolve("AWT Completed");
+                    } else {
+                        reject("AWT Lecture Failed");
+                    }
+                }, 2000);
+            });
+        }
+
+        function cn_lecture() {
+            return new Promise((resolve, reject) => {
+                let success = true;
+
+                setTimeout(() => {
+                    if (success) {
+                        console.log("CN Lecture");
+                        resolve("CN Completed");
+                    } else {
+                        reject("CN Lecture Failed");
+                    }
+                }, 2000);
+            });
+        }
+
+        function coa_lecture() {
+            return new Promise((resolve, reject) => {
+                let success = true;
+
+                setTimeout(() => {
+                    if (success) {
+                        console.log("COA Lecture");
+                        resolve("COA Completed");
+                    } else {
+                        reject("COA Lecture Failed");
+                    }
+                }, 2000);
+            });
+        }
+
+
+        // async function
+        async function startLectures() {
+            try {
+                const awt = await awt_lecture();
+                console.log(awt);
+
+                const coa = await coa_lecture();
+                console.log(coa);
+
+                const cn = await cn_lecture();
+                console.log(cn);
+
+                setTimeout(() => {
+                    console.log("completed");
+                }, 4000);
+
+            } catch (error) {
+                console.log(`error is ${error}`);
+            }
+        }
+    </script>
+</body>
+
+</html>

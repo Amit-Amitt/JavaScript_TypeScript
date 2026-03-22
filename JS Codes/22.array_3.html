@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Student = {
+            name: "Amit",
+            er: "101"
+        };
+
+        document.write(Student);
+        console.log(Student);
+        console.table(Student);
+
+
+
+        document.write("<br>*******<br>");
+
+        document.write(JSON.stringify(Student));
+
+        document.write("<br>*******<br>");
+
+        document.write(Student["name"]);
+
+        document.write("<br>*******<br>");
+
+        document.write(Student.name);
+        document.write("<br>*******<br>");
+
+        for (let i in Student) {
+            document.write(i + "<br>");
+        }
+
+
+        document.write("<br>*******<br>")
+        for (let i in Student) {
+            document.write(Student[i] + "<br>");
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

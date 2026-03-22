@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>var, let, const Example</title>
+</head>
+
+<body>
+  <script>
+
+    // Using var
+    var name = "Amit";
+    document.write("<b>var example:</b> " + name + "<br>");
+
+    var name = "Aman"; // Re-declaration is allowed
+    document.write("Updated var value: " + name + "<br><br>");
+
+    name = "Mickey"; // re-assign allowed
+    document.write("Updated var value: " + name + "<br><br>");
+
+
+    // Using let
+    let age = 20;
+    document.write("<b>let example:</b> " + age + "<br>");
+
+    //let age = 25; // Re-declaration is NOT allowed
+    age = 25; // Re-assignment is allowed
+    document.write("Updated let value: " + age + "<br><br>");
+
+    // Using const
+    const country = "India";
+
+    //const country = "USA"; // Re-declaration is NOT allowed
+    document.write("<b>const example:</b> " + country + "<br>");
+
+    //country = "USA"; // Re-assignment is NOT allowed
+    document.write("const cannot be changed once it is declared.<br>");
+    document.write("<b>const example:</b> " + country + "<br>");
+  </script>
+</body>
+
+</html>

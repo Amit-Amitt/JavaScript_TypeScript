@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function greet(callback) {
+            document.write("Hello Guest..!");
+            callback();
+        }
+        function goodBye() {
+            document.write("<br> Good Bye Guest..!");
+        }
+
+        greet(goodBye);
+
+        function showMsg(callback) {
+            document.write("Inside showMsg()");
+            callback();
+        }
+
+        showMsg(function () {
+            document.write("<br>callback function called.<br>");
+        });
+
+
+        function num(n, callback) {
+            return callback(n);
+        }
+
+        let double = (n) => n * 2;
+
+        document.write(num(5, double));
+
+    </script>
+</body>
+
+</html>

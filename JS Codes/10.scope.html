@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        g = "g = Global Scope";
+
+        function scopeCheck() {
+            var a = "var a = function scope";
+            if (true) {
+                let b = "let b = block scope";
+                const c = "const c = block scope";
+                document.write(g + "</br>");
+                document.write(a + "</br>");
+                document.write(b + "</br>");
+                document.write(c + "</br><hr>");
+            }
+            document.write(g + "</br>");
+            document.write(a + "</br><hr>");
+            // document.write(b + "</br>");
+            // document.write(c + "</br><hr>");
+        }
+        scopeCheck();
+        document.write(g + "</br>");
+        // document.write(a + "</br><hr>");
+        // document.write(b + "</br>");
+        // document.write(c + "</br><hr>");
+
+    </script>
+</body>
+
+</html>

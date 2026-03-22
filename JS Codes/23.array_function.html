@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Array Example</title>
+</head>
+
+<body>
+  <h2>JavaScript Array Methods Example</h2>
+
+  <script>
+
+    // 1 Create an Array
+    var fruit = ["banana", "mango", "chickoo"];
+    document.write("<b>Original Array:</b> " + fruit + "<hr>");
+
+    // 2 length → Returns number of elements
+    document.write("<b>Length of Array:</b> " + fruit.length + "<hr>");
+
+    // 3 push() → Adds new element at the END
+    fruit.push("papaya");
+    document.write("<b>After push('papaya'):</b> " + fruit + "<hr>");
+
+    // 4 pop() → Removes LAST element
+    let popElement = fruit.pop();
+    document.write("<b>After pop():</b> " + fruit + "<hr>");
+    document.write("<i>remove element is:<b>" + popElement + "</b></i><hr>");
+
+
+    //5 shift() → Removes FIRST element
+    // ------------------------------------------
+    fruit.shift();
+    document.write("<b>After shift():</b> " + fruit + "<hr>");
+
+    // 6 unshift() → Adds element at the START
+    fruit.unshift("banana");
+    document.write("<b>After unshift('banana'):</b> " + fruit + "<hr>");
+
+    // 7 concat() → Combines two arrays
+    var vegi = ["tomato", "potato"];
+    var mix = fruit.concat(vegi);
+
+    document.write("<b>After concat(vegi):</b> " + mix + "<hr>");
+
+    document.write("Fruit array:" + fruit + "<hr>");
+    document.write("Vegi array:" + vegi + "<hr>");
+
+
+
+
+
+
+    // 8 sort() → Sorts array alphabetically
+    document.write("<b>Sorted Array:</b> " + mix.sort() + "<hr>");
+
+    //9 reverse() → Reverses the array order
+    // ------------------------------------------
+    document.write("<b>Reversed Array:</b> " + mix.reverse() + "<hr>");
+  </script>
+</body>
+
+</html>

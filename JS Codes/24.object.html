@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            name: "Amit",
+            age: 19,
+            job: "Developer"
+        };
+
+
+        let car = new Object();
+        console.log(car);
+        car.name = "BMW";
+        console.log(car);
+
+        document.write(JSON.stringify(car));
+
+        car.name = "X";
+        document.write(JSON.stringify(car));
+
+        delete car.name;
+        document.write(JSON.stringify(car));
+        console.log(car);
+
+        console.log("name" in person);
+        console.log(person.hasOwnProperty("city"));
+
+        for (let key in person) {
+            document.write(key + " : " + person[key] + "<br>");
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

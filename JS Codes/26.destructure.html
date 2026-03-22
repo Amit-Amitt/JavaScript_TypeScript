@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ["Hello", "World", "hi", "bye"];
+
+        let first = arr[0];
+        let second = arr[1];
+
+        console.log(first);  //Hello
+        console.log(second); //world
+
+        // New Way
+        let arra2 = ["Hello", "World"]
+
+        // destructuring assignment  
+        let [first2, second2] = arra2;
+
+        console.log(first2); // Hello
+        console.log(second2); // World
+
+        var colors = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];
+        // destructuring assignment  
+        var [a, b, ...args] = colors;
+        console.log(a);
+        console.log(b);
+        console.log(args);
+
+        const student = { name: 'Arun', position: 'First', rollno: '24' };
+        const { n, p, r } = student;
+        console.log(n); // Arun
+        console.log(p); // First
+        console.log(r); // 24
+
+        let student1 = { name: "Amit", age: 19, branch: "CE" };
+
+        let { name1, ...details } = student;
+
+        console.log(name1);     // Amit
+        console.log(details);  // { age: 19, branch: "CE" }
+
+    </script>
+</body>
+
+</html>

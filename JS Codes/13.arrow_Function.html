@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let div = (a, b) => a / b;
+        document.write("division =" + div(4, 2));
+
+        //complete task (create function add(),mul() and sub())
+
+        let checkNumber = (num) => num > 10 ? console.log("Yes") : console.log("No");
+        checkNumber(5);
+        checkNumber(10);
+
+
+        // deafault args in function
+        let greet = (msg = 'Hello', name = 'guest user') => document.write(msg + " " + name);
+
+        greet();
+        greet('Hey');
+        greet('Hey', 'Raj');
+        greet(undefined, 'Raj');
+
+
+    </script>
+</body>
+
+</html>

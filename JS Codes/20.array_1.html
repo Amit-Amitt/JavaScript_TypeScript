@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fruits = ["apple", "banana", "grapes"];
+
+        document.write(fruits);
+        console.log(fruits);
+        console.table(fruits);
+
+
+        document.write("<br>*******<br>");
+
+        document.write(fruits[2]);
+
+        document.write("<br>*******<br>");
+
+        for (let i of fruits) {
+            document.write(i + "<br>");
+        }
+
+        for (let i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br>");
+        }
+
+    </script>
+</body>
+
+</html>

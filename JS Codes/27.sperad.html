@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let a = [1, 2, 3];
+        let b = [...a, 4, 5];
+
+        console.log(b); // [1, 2, 3, 4, 5]
+
+        let copy = [...a];
+        console.log(copy);
+
+        let obj1 = { name: "Amit", age: 25 };
+        let obj2 = { ...obj1, city: "Noida" };
+
+        console.log(obj2);
+
+        let o1 = { a: 1 };
+        let o2 = { b: 2 };
+
+        let o3 = { ...o1, ...o2 };
+
+
+        let num = [10, 20, 30, 40, 50];
+        let max = Math.max(...num);
+        let min = Math.min(...num);
+
+        document.write(`Max is ${max} and Min is ${min}`);
+
+        document.write("<br>************<br>");
+
+        let name = "Aman";
+        let letters = [...name].join("- - ");
+        document.write(letters + "<hr>");
+
+        let fruits = ["apples", "orange", "banana"];
+        let veg = ["tomato", "potato"];
+        let mix = [...fruits, "milk", "bread"];
+
+        document.write(mix);
+    </script>
+</body>
+
+</html>

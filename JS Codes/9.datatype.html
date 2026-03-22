@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Data Types Example</title>
+</head>
+
+<body>
+  <script>
+    // Primitive data types ->loosely type 
+    let name = "Amit";          // String
+    let age = 19;                // Number
+
+    let price = 30.6;// number
+    let isStudent = true;        // Boolean
+    let city;                    // Undefined
+    let car = null;              // Null
+    let bigNum = 12345678901234977777654774n; // BigInt -> 64-bit floating-point
+
+    console.log(person["age"]);
+    console.table(person);
+
+    // Non-primitive data types
+
+    let fruits = ["Apple", "Banana", "Cherry"]; // Array
+    let person = { name: "Bob", age: 30 }; // Object
+
+    document.write(JSON.stringify(person));
+
+    function greet() {
+      return "Hello, welcome!";
+    }
+
+    // Display results
+    document.write("<h2>Primitive Data Types</h2>");
+    document.write("String: " + name + "<br>");
+    document.write("Number: " + age + "<br>");
+    document.write("Boolean: " + isStudent + "<br>");
+    document.write("Undefined: " + city + "<br>");
+    document.write("Null: " + car + "<br>");
+    document.write("BigInt: " + bigNum + "<br><br>");
+
+    document.write("<h2>Non-Primitive Data Types</h2>");
+    document.write("Object: " + person.age + ", Age: " + person.age + "<br>");
+    document.write("Array: " + fruits + "<br>");
+    document.write("Function: " + greet() + "<br>");
+  </script>
+</body>
+
+</html>
+
+ 

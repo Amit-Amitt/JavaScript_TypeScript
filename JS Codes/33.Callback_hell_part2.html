@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function awt_lecture(callback) {
+            setTimeout(() => {
+                console.log("AWT Lecture");
+                callback();
+            }, 5000);
+        }
+        function cn_lecture(callback) {
+            setTimeout(() => {
+                console.log("CN Lecture");
+                callback();
+            }, 5000);
+        }
+        function coa_lecture(callback) {
+            setTimeout(() => {
+                console.log("COA Lecture");
+                callback();
+            }, 5000);
+
+        }
+
+        // awt_lecture(() =>{
+        //     cn_lecture( ()=> {
+        //         coa_lecture( ()=> {
+        //             console.log("All lectures completed");
+        //         })
+        //     })
+        // });
+        awt_lecture(() => {
+            cn_lecture(() => {
+                coa_lecture(() => {
+                    setTimeout(() => {
+                        console.log("All lectures are completed");
+                    }, 2000);
+                })
+            })
+        });
+
+
+
+    </script>
+</body>
+
+</html>
